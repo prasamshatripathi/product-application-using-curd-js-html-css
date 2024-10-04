@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>curd operation</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit(event)">
+                    <div>
+                        <label for="productcode">Product code</label>
+                        <input type="text" name="productcode" id="productcode">
+
+                    </div>
+                    <div><label for="product">Product name</label>
+                    <input type="text" name="product" id="product"></div>
+                    <div><label for="qty">Qty</label>
+                        <input type="number" name="qty" id="qty"></div>
+                        <div><label for="perprice">Price</label>
+                        <input type="number" name="perprice" id="perprice"></div>
+                        <div class="form action--button"><input type="submit" value="submit">
+                        <input type="reset" value="reset"></div>
+                </form>
+            </td>
+            <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                
+                                <th>Product code</th>
+                                <th>Product name</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
